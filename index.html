@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+
+
+    <head> 
+        <!-- Not visible on the website. Stores data for functionality-->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title> BWFR Uniform Order Sheet </title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <h1> Website! </h1>
+        <br>
+        <h2> Demo JavaScript in Head </h2>
+        <p id="demo"> A paragraph </p>
+        <button type="button" onclick="myFunction()"> Try it! </button>
+        <br>
+        <h3> Header 3 </h3>
+        <h4> Header 4 </h4>
+        <h5> Header 5 </h5>
+        <h6> Header 6 </h6>
+        This is a <b> Website!!! </b>
+
+        <p id="para_1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod urna auctor purus venenatis, vitae pulvinar purus lacinia. Quisque eget luctus nulla, a elementum diam. Quisque a urna magna. Integer dapibus varius justo. Vivamus ac eros bibendum, finibus tortor id, congue elit. Maecenas iaculis leo eros. <br> <hr> <br> 
+            
+            <img src="https://placehold.co/300x200/png" border="10"> <br><br>
+
+            <ul>
+
+                <li> apples </li>
+                    <ul>
+                        <li> granny smit </li>
+                        <li> golden delicious </li>
+                        <li> gala </li>
+                    </ul>
+                <li> oranges </li>
+                <li> mangoes </li>
+
+            </ul>
+
+            <br><br>
+
+            <ol>
+
+                <li> apples </li>
+                    <ul>
+                        <li> granny smit </li>
+                        <li> golden delicious </li>
+                        <li> gala </li>
+                    </ul>
+                <li> oranges </li>
+                <li> mangoes </li>
+
+            </ol>
+
+            <br><br>
+
+            <table border="10" cellpadding="10" cellspacing="1"> 
+                <tr>
+                    <th> </th>
+                    <th> Month </th>
+                    <th> Rent </th>
+                    <th colspan="2"> Utilities </th>
+                    <th> Groceries </th>
+                </tr>
+                <tr>
+                    <td rowspan="3"> Summer </td>
+                    <td> June </td>
+                    <td> $1500 </td>
+                    <td> $150 </td>
+                    <td> $75 </td>
+                    <td> $275 </td>
+                </tr>
+                <tr>
+                    <td> July </td>
+                    <td> $1500 </td>
+                    <td> $150 </td>
+                    <td> $75 </td>
+                    <td> $275 </td>
+                </tr>
+                <tr>
+                    <td> August </td>
+                    <td> $1500 </td>
+                    <td> $150 </td>
+                    <td> $75 </td>
+                    <td> $275 </td>
+                </tr>
+            </table>
+
+            <br><br>
+
+            <a href="https://www.google.com" target="_blank"> Maecenas sit amet faucibus odio. </a> 
+            
+            <br><br>        
+            Maecenas semper erat nec arcu venenatis porta. Aliquam bibendum, nisl non faucibus molestie, turpis odio aliquet purus, ac posuere libero ipsum vitae orci. Nulla iaculis enim vitae mi ultrices, ac laoreet elit suscipit. Fusce aliquam eu nulla et aliquet. In commodo gravida ullamcorper. </p>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod urna auctor purus venenatis, vitae pulvinar purus lacinia. Quisque eget luctus nulla, a elementum diam. Quisque a urna magna. <br><br> <b> Integer dapibus varius justo. Vivamus ac eros bibendum, finibus tortor id, congue elit. Maecenas iaculis leoeros. </b> <br><br>  <i> Maecenas sit amet faucibus odio. </i>  <br><br> Maecenas semper erat nec arcu venenatis porta. <br><br> <u> Aliquam bibendum, nisl non faucibus molestie, turpis odio aliquet purus, ac posuere libero ipsum vitae orci. </u> <br><br> <em> Nulla iaculis enim vitae mi ultrices, ac laoreet elit suscipit. </em> <br><br> <strong> Fusce aliquam eu nulla et aliquet. In commodo gravida ullamcorper. </strong> </p>
+
+
+        <!-- Initial test form -->
+
+        <form>
+
+        <p> Name: (Required)</p>    
+        <input type="text">  
+        <br> 
+        <p> Email: (Required) </p>  
+        <input type="text">    
+        <br> 
+        <p> Phone: (Required) </p>  
+        <input type="text"> 
+
+        <br>
+
+            <!-- Accordion dropdown -->
+
+        <h2> Animated Accordion</h2>
+        <p> Click on the buttons to open the collapsible content.</p>
+
+        <button type="button" class="accordion" onclick="populatePC61_Sizes()">Adult/Unisex Apparel </button> 
+        <div class="panel">
+            <h3> (PC61) Short Sleeve Port & Company 6oz </h3>
+            <img src="https://cdn.chipply.net/images/productprocess/10204/269015/6842350/600/27983835-efda-430b-a395-26f419dcc58d.jpg" width="250" height="250" border="5"> 
+            <p>This is a shirt. It is blue. You will buy it. You will like it. No take backs.</p>
+            
+            <br>
+
+            <label for="shirtsize"> Choose a size: </label> &nbsp;
+            <select id="pc61_sizes"></select>
+      
+            <br>
+            <p> Color: </p>
+            <p>   
+                <label for="quantity"> Navy Blue: </label> &nbsp; &nbsp;
+                <select name="quantity" id="quantity">
+                    <option value="none"> </option>
+                    <option value="one"> 1 </option>
+                    <option value="two"> 2 </option>
+                    <option value="three"> 3 </option>
+                    <option value="four"> 4 </option>
+                </select>
+            &nbsp;
+            Other: <input type="text">
+            </p> 
+            <p> 
+                <label for="quantity"> Red:  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;</label> &nbsp;
+                <select name="quantity" id="quantity">
+                    <option value="none"> </option>
+                    <option value="one"> 1 </option>
+                    <option value="two"> 2 </option>
+                    <option value="three"> 3 </option>
+                    <option value="four"> 4 </option>
+                </select>
+            &nbsp;
+            Other: <input type="text">
+            </p>
+            <p> 
+                <label for="quantity"> White: </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <select name="quantity" id="quantity">
+                    <option value="none"> </option>
+                    <option value="one"> 1 </option>
+                    <option value="two"> 2 </option>
+                    <option value="three"> 3 </option>
+                    <option value="four"> 4 </option>
+                </select>
+            &nbsp;
+            Other: <input type="text"> </p>
+            <br>
+        </div>
+            
+
+        <button type="button" class="accordion"> Some Other Apparel </button> 
+        <div class="panel">
+            <p>This is NOT a shirt.</p>
+        </div>
+            
+        
+
+        <input type="radio">  
+        
+        <input type="submit">
+            <br> 
+        <input type="button">  
+        <br>
+        <input type="checkbox">
+
+        <input type="hidden" class="quantity-send-value" val="">
+
+        </form>
+
+        <br> <br>
+
+        <!--  PHP TEST CODE BELOW -->
+
+        <?php <!-- define variables and set to empty -->
+        $name = $email = $gender = $comment = $website = "";
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = test_input($_POST["name"]);
+            $email = test_input($_POST["email"]);
+            $website = test_input($_POST["website"]);
+            $comment = test_input($_POST["comment"]);
+            $gender = test_input($_POST["gender"]); 
+        }
+
+        function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+        ?>
+
+        <h2>PHP Form Validation Examples </h2>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+            Name: <input type="text" name="name"> <br><br>
+            E-mail: <input type="text" name="email"> <br><br>
+            Website: <input type="text" name="website"> <br><br>
+            Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+            <br><br>
+            Gender:
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="other">Other
+            <br><br>
+            <input type="submit" value="Send Form">
+
+        </form>
+
+        <?php
+        echo "<h2>Your Input: </h2>";
+        echo $name;
+        echo "<br>";
+        echo $email;
+        echo "<br>";
+        echo $website;
+        echo "<br>";
+        echo $comment;
+        echo "<br>";
+        echo $gender;
+        ?>
+
+
+
+        <!-- JAVA SCRIPT CALL -->
+
+       <script src="animation.js"> </script>
+
+    </body>
+
+</html>
+
+
